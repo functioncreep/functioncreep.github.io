@@ -14,7 +14,11 @@
 $arrow-border: 1px solid black;
 
 .greeting {
-    margin-bottom: 2em;
+    margin-bottom: 1em;
+
+    .subtitle {
+        margin-bottom: 0.75em;
+    }
 }
 
 .arrow-right {

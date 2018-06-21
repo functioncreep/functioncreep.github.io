@@ -6420,7 +6420,9 @@ label.panel-block {
   padding: 3rem 1.5rem 6rem; }
 
 .greeting {
-  margin-bottom: 2em; }
+  margin-bottom: 1em; }
+  .greeting .subtitle {
+    margin-bottom: 0.75em; }
 
 .arrow-right {
   width: 3em;
