@@ -1,5 +1,45 @@
 // Main Styles for functioncreep.github.io
 
+// Import Bulma's initial variables
+@import "../bulma/sass/utilities/initial-variables";
+@import "../bulma/sass/utilities/functions";
+// XXX: It's important derived-variables is impported after functions
+@import "../bulma/sass/utilities/derived-variables";
+
+// ---------- re-theme colors go here... ---------- //
+
+// Import Bulma
+@import "../bulma/bulma";
+
+$arrow-border: 1px solid black;
+
 .greeting {
     margin-bottom: 2em;
+}
+
+.arrow-right {
+    width: 3em;
+    height: 0.75em;
+    border: $arrow-border;
+    border-right: 0;
+    border-top: 0;
+    float: left;
+    margin-left: 1em;
+
+    .arrow-right-head {
+        width: 0.5em;
+        height: 0.5em;
+        border: $arrow-border;
+        border-left: 0;
+        border-bottom: 0;
+        transform: rotate(45deg);
+        position: relative;
+        bottom: -0.5em;
+        right: -2.5em;
+    }
+}
+
+#construction {
+    margin-left: 5em;
+
 }
