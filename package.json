@@ -18,5 +18,9 @@
   "homepage": "https://github.com/functioncreep/functioncreep.github.io#readme",
   "dependencies": {
     "bulma": "^0.7.1"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^4.0.1"
   }
 }
