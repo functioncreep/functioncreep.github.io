@@ -14,4 +14,16 @@ gulp.task('sass:watch', function() {
     gulp.watch('./sass/**/*.scss', ['sass']);
 });
 
-gulp.task('default', ['sass', 'sass:watch']);
+// Bulma-specific sass compilation
+gulp.task('bulma', function() {
+    return gulp.src('./bulma/sass/**/*.scss')
+        .pipe(sass().on('error', sass.logError))
+        .pipe(gulp.dest('./bulma/css'));
+});
+
+gulp.task('bulma:watch', function() {
+    gulp.watch('./bulma/sass/**/*.scss', ['bulma']);
+});
+
+
+gulp.task('default', ['sass', 'sass:watch', 'bulma', 'bulma:watch']);
