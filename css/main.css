@@ -6426,6 +6426,8 @@ label.panel-block {
 
 .name {
   margin-bottom: 2em; }
+  .name .sub-2 {
+    word-spacing: 0.5em; }
 
 .arrow {
   margin-bottom: 1em; }
