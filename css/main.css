@@ -6450,7 +6450,8 @@ label.panel-block {
     right: -2.5em; }
 
 .arrow-right-text {
-  margin-left: 5em; }
+  margin-left: 1em;
+  display: inline-block; }
 
 .arrow-down {
   width: 0;
@@ -6472,4 +6473,10 @@ label.panel-block {
 
 .arrow-down-text {
   margin-left: 0em;
-  margin-top: 1em; }
+  margin-top: 1em;
+  display: inline-block; }
+
+a {
+  color: #363636; }
+  a:hover {
+    color: #3273dc; }
