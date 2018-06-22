@@ -21,6 +21,14 @@ $arrow-border: 1px solid black;
     }
 }
 
+.name {
+    margin-bottom: 2em;
+}
+
+.arrow {
+    margin-bottom: 1em;
+}
+
 .arrow-right {
     width: 3em;
     height: 0.75em;
@@ -43,7 +51,32 @@ $arrow-border: 1px solid black;
     }
 }
 
-#construction {
+.arrow-right-text {
     margin-left: 5em;
+}
 
+.arrow-down {
+    width: 0;
+    height: 2em;
+    border: $arrow-border;
+    border-right: 0;
+    border-top: 0;
+    margin-left: 1em;
+
+    .arrow-down-head {
+        width: 0.5em;
+        height: 0.5em;
+        border: $arrow-border;
+        border-left: 0;
+        border-top: 0;
+        transform: rotate(45deg);
+        position: relative;
+        bottom: -1.5em;
+        left: -0.25em;
+    }
+}
+
+.arrow-down-text {
+    margin-left: 0em;
+    margin-top: 1em;
 }
